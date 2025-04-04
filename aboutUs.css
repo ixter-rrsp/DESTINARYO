@@ -1,0 +1,304 @@
+@font-face {
+    font-family: custom-title;
+    src: url(fonts/Louis-George-Cafe-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: custom-message;
+    src: url(fonts/Louis-George-Cafe.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FAF3E0;
+}
+.content-container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+.header-container{
+    width: 75%;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+.logo-container img{
+    width: 300px;
+    height: auto;
+}
+.title-container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: custom-title;
+    color: #1B4F72 ;
+    text-shadow: 0 4px 6px rgba(2, 2, 6, 0.603);
+}
+.title-container h1{
+    text-align: center;
+    font-size: 6rem;
+}
+.title-container h2{
+    margin-top: 100px;
+    font-size: 4rem;
+}
+
+.welcome-message{
+    font-size: clamp(15px,3vw, 30px);
+    margin-top: 70px;
+    margin-bottom: 5%;
+    line-height: 2;
+    text-align: center;
+    font-family: custom-message;
+    color: #1B4F72;
+}
+.story-message{
+    width: 75%;
+    font-size: clamp(15px, 3vw, 30px);
+    margin-top: 70px;
+    margin-bottom: 5%;
+    line-height: 2;
+    text-align: center;
+    font-family: custom-message;
+    color: #1B4F72;
+}
+.divider{
+    width: 90%;
+    height: 3px;
+    background-color:#1B4F72;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+
+
+
+.member-row{
+    display: flex;
+    width: 60%;
+    height: 40vh auto;
+    justify-content: center;
+    gap: 7%;
+    margin-top: 5%;
+    min-width: 700px;
+    max-height: 450px;
+}
+
+.members{
+    width: 40%;
+    background-color: #FFEB99;
+    justify-items: center;
+    max-width: 350px;
+    max-height: 450px;
+    box-shadow: 10px 10px 0px #B2BEB5;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    width: 80%; 
+    aspect-ratio: 1 / 1;
+    
+}
+
+
+.profile-image img {
+    background-color: white;
+    margin-top: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.member-name{
+    margin-top: 10%;
+    font-size: 1.3rem;
+    
+}
+.member-role{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+
+@media screen and (max-width: 1000px){
+    .title-container h1{
+        text-align: center;
+        font-size: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    
+    .logo-container img{
+        width: 200px;
+    }
+
+    .title-container h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .title-container h2{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 60px;
+    }
+    .welcome-message{
+        font-size: 1rem;
+        margin-top: 70px;
+        margin-bottom: 5%;
+        line-height: 2;
+        text-align: center;
+    }
+    .story-message{
+        width: 75%;
+        font-size: 1rem;
+        margin-top: 40px;
+        margin-bottom: 5%;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .member-row{
+        flex-direction: column;
+        gap: 50px;
+        min-width: 400px;
+        max-height: fit-content;
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .members{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .content-container{
+        width: 80%;
+    }
+    .header-container{
+        width: 100%;
+    }
+    .title-container{
+        font-size: 0.7rem;
+    }
+
+    .logo-container img{
+        width: 200px;
+    }
+
+    .title-container h1{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .title-container h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .welcome-message{
+        width: 100%;
+        font-size: 0.8rem;
+        margin-top: 70px;
+        margin-bottom: 5%;
+        line-height: 2;
+        text-align: center;
+    }
+    .story-message{
+        width: 100%;
+        font-size: 0.8rem;
+        margin-top: 70px;
+        margin-bottom: 5%;
+        line-height: 2;
+        text-align: center;
+    }
+
+
+    .logo-container img{
+        width: 150px;
+    }
+    .member-row{
+        flex-direction: column;
+        gap: 20px;
+        min-width: 200px;
+        max-height: fit-content;
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .members{
+        width: 80%;
+    }
+    .member-name{
+        margin-top: 10%;
+        font-size: 0.8rem;
+        
+    }
+}
+
+@media screen and (max-width: 220px){
+    .title-container{
+        font-size: 0.5rem;
+    }
+    .logo-container img{
+        width: 100px;
+    }
+
+    .title-container h1{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .title-container h2{
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .welcome-message{
+        font-size: 0.7rem;
+        margin-top: 30px;
+        margin-bottom: 5%;
+        line-height: 2;
+        text-align: center;
+    }
+    .story-message{
+        width: 75%;
+        font-size: .7rem;
+        margin-top: 20px;
+        margin-bottom: 5%;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .member-row{
+        flex-direction: column;
+        gap: 20px;
+        min-width: 100px;
+        max-height: fit-content;
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .members{
+        width: 80%;
+    }
+    .member-name{
+        margin-top: 10%;
+        font-size: 0.4rem;
+
+    }
+}

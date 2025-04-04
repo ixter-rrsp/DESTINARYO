@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines Tourist Spots</title>
+    <link rel="stylesheet" href="zLandmarksResources/Landmarks.css">
+    <link rel="stylesheet" href="../Navbar.css">
+    <script src="zLandmarksResources/search.js"></script> 
+    <link rel="icon" type="image/x-icon" href="../image/favicon_io/favicon.ico">
+</head>
+
+<body style="background-color: #FAF3E0;">
+
+  
+
+  <nav class="navbar">
+    <div class="navbar-top-container">
+        <div class="navbar-icon-burger-container">
+            <a href="../Destinaryo.htm">
+                <div class="navbar-logo-container">
+                    <img src="../logo.png" alt="Destinaryo" class="navbar-logo">
+                </div>
+            </a>
+            <div class="burger-button" onclick="toggleNavbar()">☰</div>
+        </div>
+
+        <div class="button-searchbar-container" id="navbar-menu">
+            <div class="navbar-button-container">
+                <a href="../Destinaryo.htm"><button class="navbar-button">Home</button></a>
+                <a href="../Destinations.htm"><button class="navbar-button">Destinations</button></a>
+                <a href="../aboutUs.htm"><button class="navbar-button">About Us</button></a>
+            </div>
+
+            <div class="searchbar-container">
+                <input type="text" class="searchbar" id="searchBox" placeholder="Search..." onkeyup="searchFiles()">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            
+        </div>
+    </div>
+
+   <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+            <li><a href="../Destinaryo.htm">Home</a></li>
+            <li><a href="../Destinations.htm">Destinations</a></li>
+            <li><a href="zAllDestinations-10.htm">Philippines Tourist Spots 10</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="mainContainer">
+        <div class="headerContainer">
+            <h1 class="header">Philippines Tourist Spots</h1>
+            <P class="sub-header">PAGE 10</p>
+        </div>
+
+
+        <div class="card-container">
+          <a href="Beaches/SubicBay/SubicBay.htm" class="cardLink">
+            <div class="card1" id="Beaches5">
+              <div class="image-container">
+                <img src="Beaches/SubicBay/SubicBay-01.jpg " alt="Subic Bay">
+                <img src="Beaches/SubicBay/SubicBay-02.jpg " alt="Subic Bay">
+                <img src="Beaches/SubicBay/SubicBay-03.jpg" alt="Subic Bay">
+                <img src="Beaches/SubicBay/SubicBay-04.png " alt="Subic Bay">
+                <img src="Beaches/SubicBay/SubicBay-05.jpg " alt="Subic Bay">
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Subic Bay – Zambales</p>
+                <p class="details">Once a U.S. naval base, Subic Bay has transformed into a thriving beach destination with luxury resorts, adventure parks, and historical landmarks.
+    
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="LakesAndMountains/SumlangLake/SumlangLake.htm" class="cardLink">
+            <div class="card1" id="LakesAndMountains2">
+              <div class="image-container">
+                <img src="LakesAndMountains/SumlangLake/SumlangLake-01.jpg" alt="Sumlang Lake">
+                <img src="LakesAndMountains/SumlangLake/SumlangLake-02.jpg" alt="Sumlang Lake">
+                <img src="LakesAndMountains/SumlangLake/SumlangLake-03.jpg" alt="Sumlang Lake">
+                <img src="LakesAndMountains/SumlangLake/SumlangLake-04.jpg" alt="Sumlang Lake">
+                
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Sumlang Lake- Albay</p>
+                <p class="details">A serene and picturesque lake in Albay, Sumlang Lake offers a perfect view of Mayon Volcano, along with bamboo rafting, kayaking, and floating cottages.
+                </p>
+              </div>  
+            </div>
+          </a>
+    
+          <a href="LakesAndMountains/TaalVolcano/TaalVolcano.htm" class="cardLink">
+            <div class="card1" id="LakesAndMountains">
+              <div class="image-container">
+                <img src="LakesAndMountains/TaalVolcano/TaalVolcano-01.jpg" alt="Mount Kitanglad">
+                <img src="LakesAndMountains/TaalVolcano/TaalVolcano-02.jpg" alt="Mount Kitanglad">
+                <img src="LakesAndMountains/TaalVolcano/TaalVolcano-03.jpg" alt="Mount Kitanglad">
+                <img src="LakesAndMountains/TaalVolcano/TaalVolcano-04.jpg" alt="Mount Kitanglad">
+                <img src="LakesAndMountains/TaalVolcano/TaalVolcano-05.jpg" alt="Mount Kitanglad">
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Taal Volcano – Batangas</p>
+                <p class="details">
+                  One of the world's smallest active volcanoes, located in Batangas. It features a crater lake within a larger lake, creating a unique landscape. Visitors can hike, take a boat ride, or enjoy breathtaking views from Tagaytay’s scenic spots.            </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="WaterFalls/TangadanFalls/TangadanFalls.htm"  class="cardLink">
+            <div class="card1" id="falls5">
+              <div class="image-container">
+                <img src="WaterFalls/TangadanFalls/TangadanFalls-01.jpeg" alt="Tangadan Falls">
+                <img src="WaterFalls/TangadanFalls/TangadanFalls-02.jpg" alt="TangadanFalls">
+                <img src="WaterFalls/TangadanFalls/TangadanFalls-03.jpg" alt="Tangadan Falls">
+                <img src="WaterFalls/TangadanFalls/TangadanFalls-04.jpg" alt="Tangadan Falls">
+                <img src="WaterFalls/TangadanFalls/TangadanFalls-05.jpg" alt="TangadanFalls">
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Tangadan Falls – La Union</p>
+                <p class="details">A two-tiered waterfall nestled in the mountains of San Gabriel, La Union, Tangadan Falls is a scenic paradise known for its rock pools, cliff-jumping spots, and serene natural beauty.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="WaterFalls/TappiyahFalls/TappiyahFalls.htm" class="cardLink">
+            <div class="card1" id="falls">
+              <div class="image-container">
+                <img src="WaterFalls/TappiyahFalls/TappiyahFalls-01.jpg" alt="Tappiyah Falls">
+                <img src="WaterFalls/TappiyahFalls/TappiyahFalls-02.jpg" alt="Tappiyah Falls">
+                <img src="WaterFalls/TappiyahFalls/TappiyahFalls-03.jpg" alt="Tappiyah Falls">
+                <img src="WaterFalls/TappiyahFalls/TappiyahFalls-04.jpg" alt="Tappiyah Falls">
+                <img src="WaterFalls/TappiyahFalls/TappiyahFalls-05.jpg" alt="Tappiyah Falls">
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Tappiyah Falls – Banaue, Ifugao</p>
+                <p class="details">Nestled in Banaue, Ifugao, this majestic waterfall boasts a powerful cascade that flows into a deep, emerald pool. Accessible via a scenic yet challenging hike, it offers a rewarding and refreshing experience after exploring the famous rice terraces.</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="WaterFalls/TaytayFalls/TaytayFalls.htm" class="cardLink">
+            <div class="card1" id="falls2">
+              <div class="image-container">
+                <img src="WaterFalls/TaytayFalls/TaytayFalls-01.jpg" alt="Taytay Falls">
+                <img src="WaterFalls/TaytayFalls/TaytayFalls-02.jpg" alt="Taytay Falls">
+                <img src="WaterFalls/TaytayFalls/TaytayFalls-03.jpg" alt="Taytay Falls">
+                <img src="WaterFalls/TaytayFalls/TaytayFalls-04.jpg" alt="Taytay Falls">
+                <img src="WaterFalls/TaytayFalls/TaytayFalls-05.jpg" alt="Taytay Falls">
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Taytay Falls – Laguna</p>
+                <p class="details">A hidden gem in Majayjay, Laguna, Taytay Falls (also known as "Imelda Falls") features refreshing ice-cold waters, lush greenery, and a tranquil ambiance perfect for nature lovers.</p>
+              </div>
+            </div>
+          </a>
+    
+          <a href="WaterFalls/TinagoFalls/TinagoFalls.htm" class="cardLink">
+            <div class="card1" id="falls3">
+              <div class="image-container">
+                <img src="WaterFalls/TinagoFalls/TinagoFalls-01.jpg" alt="Tinago Falls">
+                <img src="WaterFalls/TinagoFalls/TinagoFalls-02.jpg" alt="Tinago Falls">
+                <img src="WaterFalls/TinagoFalls/TinagoFalls-03.jpg" alt="Tinago Falls">
+                <img src="WaterFalls/TinagoFalls/TinagoFalls-04.jpg" alt="Tinago Falls">
+                <img src="WaterFalls/TinagoFalls/TinagoFalls-05.jpg" alt="Tinago Falls">
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Tinago Falls – Iligan City, Lanao del Norte</p>
+                <p class="details">True to its name, Tinago Falls (which means "hidden falls") is a majestic 73-meter-high waterfall tucked within a deep ravine, offering visitors a breathtaking view of cascading waters into a blue lagoon.</p>
+              </div>
+            </div>
+          </a>
+    
+          <a href="WaterFalls/Tinuy-anFalls/Tinuy-anFalls.htm"  class="cardLink">
+            <div class="card1" id="falls4">
+              <div class="image-container">
+                <img src="WaterFalls/Tinuy-anFalls/Tinuy-anFalls-01.jpg" alt="Tinuy-an Falls">
+                <img src="WaterFalls/Tinuy-anFalls/Tinuy-anFalls-02.jpg" alt="Tinuy-anFalls">
+                <img src="WaterFalls/Tinuy-anFalls/Tinuy-anFalls-03.jpg" alt="Tinuy-anFalls">
+                <img src="WaterFalls/Tinuy-anFalls/Tinuy-anFalls-04.jpeg" alt="Tinuy-anFalls">
+                <img src="WaterFalls/Tinuy-anFalls/Tinuy-anFalls-05.jpg" alt="Tinuy-an Falls">
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Tinuy-an Falls – Surigao del Sur</p>
+                <p class="details">Often called the "Niagara Falls of the Philippines," Tinuy-an Falls is a stunning 95-meter-wide, multi-tiered waterfall in Bislig, Surigao del Sur, known for its white curtain-like cascades.</p>
+              </div>
+            </div>
+          </a>
+    
+          <a href="WaterFalls/TumalogFalls/TumalogFalls.htm"  class="cardLink">
+            <div class="card1" id="falls5">
+              <div class="image-container">
+                <img src="WaterFalls/TumalogFalls/TumalogFalls-01.jpg" alt="Tumalog Falls">
+                <img src="WaterFalls/TumalogFalls/TumalogFalls-02.jpg" alt="Tumalog Falls">
+                <img src="WaterFalls/TumalogFalls/TumalogFalls-03.jpg" alt="Tumalog Falls">
+                <img src="WaterFalls/TumalogFalls/TumalogFalls-04.jpg" alt="Tumalog Falls">
+                <img src="WaterFalls/TumalogFalls/TumalogFalls-05.jpg" alt="Tumalog Falls">
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Tumalog Falls – Oslob, Cebu</p>
+                <p class="details">A stunning, veil-like waterfall in Oslob, Cebu, featuring thin, gentle cascades flowing over moss-covered rocks. The shallow pools create a dreamy, relaxing atmosphere, making it a favorite stop after a whale shark-watching adventure in the area.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="AdventureSites/ZoobicSafari/ZoobicSafari.htm" class="cardLink">
+            <div class="card1" id="AdventureSites5">
+              <div class="image-container">
+                <img src="AdventureSites/ZoobicSafari/ZoobicSafari-01.jpg" alt="Zoobic Safari">
+                <img src="AdventureSites/ZoobicSafari/ZoobicSafari-02.jpg" alt="Zoobic Safari">
+                <img src="AdventureSites/ZoobicSafari/ZoobicSafari-03.jpg" alt="Zoobic Safari">
+                <img src="AdventureSites/ZoobicSafari/ZoobicSafari-04.jpg" alt="Zoobic Safari">
+                <img src="AdventureSites/ZoobicSafari/ZoobicSafari-05.jpg" alt="Zoobic Safari">
+              </div>
+              
+              <div class="text-content">
+                <p class="name">Zoobic Safari – Zambales</p>
+                <p class="details">
+                    Zoobic Safari, located in Subic Bay Freeport Zone, is the Philippines’ only tiger safari. It offers thrilling encounters with tigers, exotic animals, and indigenous wildlife. Attractions include a petting zoo, serpentarium, Aeta cultural performances, and safari rides through open enclosures.
+    
+                </p>  
+              </div>
+            </div>
+          </a>
+
+
+        
+            
+            
+        </div>
+        
+        <ul class="pagination">
+          <li class="arrow"><a href="zAllDestinations-9.htm">&laquo;</a></li>
+          <a href="zAllDestinations-6.htm"><li >6</li></a>
+          <a href="zAllDestinations-7.htm"><li >7</li></a>
+          <a href="zAllDestinations-8.htm"><li >8</li></a>
+          <a href="zAllDestinations-9.htm"><li >9</li></a>
+          <a href="zAllDestinations-10.htm"><li class="active">10</li></a>
+          <li class="arrow"><a href="zAllDestinations.htm">&raquo;</a></li>
+        </ul>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+      <div class="footer-elements-container">
+        <div class="footer-brand-container">
+          <a href=" ../../Destinaryo.htm">
+            <div class="footer-logo-container">
+              <img src=" ../../logo.png" alt="Destinaryo" class="footer-logo">
+            </div>
+            </a>
+        </div>
+        <div class="footer-buttons">
+          
+          <table class="footer-buttons-table">
+            <tr>
+              <td>
+                <a href=" ../../aboutUs.htm"><button class="footer-button-link">About Us</button></a>
+              </td>
+              <td>
+                <a href=" ../../Desstinations.htm"><button class="footer-button-link">Destinations</button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href=" ../../Destinaryo.htm"><button class="footer-button-link">Home</button></a>
+              </td>
+              <td>
+                <a href=" ../../referencePage.htm"><button class="footer-button-link">References</button></a>
+              </td>
+            </tr>
+          </table>     
+        </div>
+      </div>
+      <div class="footer-brand">
+        <p class="footer-brand-subtitle">Disclaimer: Photos and links are sourced externally—full credit to the original owners. This content is for educational purposes only.</p>
+      </div>
+    </div>
+</body>
+<script src="zLandmarksResources/Landmarks.js"></script>
+</html>

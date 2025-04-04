@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaches 2</title>
+    <link rel="stylesheet" href="zLandmarksResources/Landmarks.css">
+    <link rel="stylesheet" href="../Navbar.css">
+    <script src="zLandmarksResources/search.js"></script> 
+    <link rel="icon" type="image/x-icon" href="../image/favicon_io/favicon.ico">
+
+</head>
+
+<body style="background-color: #FAF3E0;">
+  <nav class="navbar">
+    <div class="navbar-top-container">
+      <div class="navbar-icon-burger-container">
+        <a href=" ../Destinaryo.htm">
+          <div class="navbar-logo-container">
+            <img src="../logo.png" alt="Destinaryo" class="navbar-logo">
+          </div>
+        </a>
+        <div class="burger-button" onclick="toggleNavbar()">
+          ☰
+        </div>
+      </div>
+      
+      <div class="button-searchbar-container" id="navbar-menu">
+        <div class="navbar-button-container">
+          <a href="../Destinaryo.htm"><button class="navbar-button">Home</button></a>
+          <a href="../Destinations.htm"><button class="navbar-button">Destinations</button></a>
+          <a href="../aboutUs.htm"><button class="navbar-button">About Us</button></a>
+        </div>
+        
+        <div class="searchbar-container">
+          <input type="text" class="searchbar" id="searchBox" placeholder="Search..." onkeyup="searchFiles()">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+          <div id="searchResults" class="search-results"></div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="breadcrumb-container">
+      <ul class="breadcrumb">
+        <li><a href="../Destinaryo.htm">Home</a></li>
+        <li><a href="../Destinations.htm">Destinations</a></li>
+        <li><a href="Beaches-2.htm">Beaches 2</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="mainContainer">
+    <div class="headerContainer">
+      <h1 class="header">Beaches</h1>
+      <p class="sub-header">PAGE 2</p>
+    </div>
+    
+    <div class="card-container">
+      <a href="Beaches/CanibadBeach/CanibadBeach.htm" class="cardLink">
+        <div class="card1" id="Beaches">
+          <div class="image-container">
+            <img src="Beaches/CanibadBeach/CanibadBeach-01.jpg " alt="Canibad Beach">
+            <img src="Beaches/CanibadBeach/CanibadBeach-02.jpg " alt="Canibad Beach">
+            <img src="Beaches/CanibadBeach/CanibadBeach-03.jpg " alt="Canibad Beach">
+            <img src="Beaches/CanibadBeach/CanibadBeach-04.jpg " alt="Canibad Beach">
+            <img src="Beaches/CanibadBeach/CanibadBeach-05.jpg " alt="Canibad Beach">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Canibad Beach – Samal Island, Davao del Norte</p>
+            <p class="details">A hidden paradise in Samal, Canibad Beach is known for its secluded location, towering cliffs, and rustic charm, making it a perfect getaway for nature lovers.
+            </p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="Beaches/DahicanBeach/DahicanBeach.htm" class="cardLink">
+        <div class="card1" id="Beaches2">
+          <div class="image-container">
+            <img src="Beaches/DahicanBeach/DahicanBeach-01.jpg " alt="Dahican Beach">
+            <img src="Beaches/DahicanBeach/DahicanBeach-02.jpg " alt="Dahican Beach">
+            <img src="Beaches/DahicanBeach/DahicanBeach-03.jpg " alt="Dahican Beach">
+            <img src="Beaches/DahicanBeach/DahicanBeach-04.jpg " alt="Dahican Beach">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Dahican Beach – Mati, Davao Oriental</p>
+            <p class="details">A paradise for surfers and skimboarders, Dahican Beach is a scenic 7-kilometer stretch of golden sand and powerful waves.
+            </p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="Beaches/DakakBeach/DakakBeach.htm" class="cardLink">
+        <div class="card1" id="Beaches5">
+          <div class="image-container">
+            <img src="Beaches/DakakBeach/DakakBeach-01.JPG " alt="Dakak Beach">
+            <img src="Beaches/DakakBeach/DakakBeach-02.jpg " alt="Dakak Beach">
+            <img src="Beaches/DakakBeach/DakakBeach-03.jpg " alt="Dakak Beach">
+            <img src="Beaches/DakakBeach/DakakBeach-04.jpg " alt="Dakak Beach">
+            <img src="Beaches/DakakBeach/DakakBeach-05.jpg " alt="Dakak Beach">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Dakak Beach- Zamboanga del Norte</p>
+            <p class="details">A pristine white-sand beach with crystal-clear waters and lush coconut trees, Dakak Beach is a tropical paradise known for its luxurious resort and thrilling water activities.
+            </p>                
+          </div>
+        </div>
+      </a>
+      
+      <a href="Beaches/DumaluanBeach/DumaluanBeach.htm" class="cardLink">
+        <div class="card1" id="Beaches4">
+          <div class="image-container">
+            <img src="Beaches/DumaluanBeach/DumaluanBeach-01.jpg " alt="Dumaluan Beach">
+            <img src="Beaches/DumaluanBeach/DumaluanBeach-02.jpg " alt="Dumaluan Beach">
+            <img src="Beaches/DumaluanBeach/DumaluanBeach-03.jpg " alt="Dumaluan Beach">
+            <img src="Beaches/DumaluanBeach/DumaluanBeach-04.jpg " alt="Dumaluan Beach">
+            <img src="Beaches/DumaluanBeach/DumaluanBeach-05.jpg " alt="Dumaluan Beach">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Dumaluan Beach – Bohol</p>
+            <p class="details">A serene stretch of white sand in Bohol, known for its gentle waves, family-friendly resorts, and laid-back atmosphere. Ideal for swimming, sunbathing, and water activities, it's a great alternative to the more crowded Alona Beach.
+            </p>
+          </div>
+        </div>
+      </a>
+      
+      <a href="Beaches/ElNido/ElNido.htm" class="cardLink">
+        <div class="card1" id="Beaches5">
+          <div class="image-container">
+            <img src="Beaches/ElNido/ElNido-01.jpg " alt="El Nido">
+            <img src="Beaches/ElNido/ElNido-02.jpg " alt="El Nido">
+            <img src="Beaches/ElNido/ElNido-03.jpg" alt="El Nido">
+            <img src="Beaches/ElNido/ElNido-04.png " alt="El Nido">
+            <img src="Beaches/ElNido/ElNido-05.jpg " alt="El Nido">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">El Nido – Palawan</p>
+            <p class="details">A tropical paradise in Palawan, renowned for its dramatic limestone formations, hidden lagoons, and pristine beaches. Island-hopping tours reveal breathtaking seascapes, while its vibrant marine life makes it a top destination for diving and snorkeling.
+              El Nido is a breathtaking tropical paradise located at the northern tip of Palawan. </p>
+          </div>
+        </div>
+      </a>
+      
+      <ul class="pagination">
+        <li class="arrow"><a href="Beaches.htm">&laquo;</a></li>
+        <a href="Beaches.htm"><li >1</li></a>
+        <a href="Beaches-2.htm"><li class="active">2</li></a>
+        <a href="Beaches-3.htm"><li >3</li></a>
+        <a href="Beaches-4.htm"><li >4</li></a>
+        <li class="arrow"><a href="Beaches-3.htm">&raquo;</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-elements-container">
+      <div class="footer-brand-container">
+        <a href=" ../Destinaryo.htm">
+          <div class="footer-logo-container">
+            <img src=" ../logo.png" alt="Destinaryo" class="footer-logo">
+          </div>
+        </a>
+      </div>
+      <div class="footer-buttons">
+        <table class="footer-buttons-table">
+          <tr>
+            <td>
+              <a href=" ../aboutUs.htm"><button class="footer-button-link">About Us</button></a>
+            </td>
+            <td>
+              <a href=" ../Destinations.htm"><button class="footer-button-link">Destinations</button></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href=" ../Destinaryo.htm"><button class="footer-button-link">Home</button></a>
+            </td>
+            <td>
+              <a href=" ../referencePage.htm"><button class="footer-button-link">References</button></a>
+            </td>
+          </tr>
+        </table>     
+      </div>
+    </div>
+    <div class="footer-brand">
+      <p class="footer-brand-subtitle">Disclaimer: Photos and links are sourced externally—full credit to the original owners. This content is for educational purposes only.</p>
+    </div>
+  </div>
+
+  <script src="zLandmarksResources/Landmarks.js"></script>
+</body>
+
+</html>

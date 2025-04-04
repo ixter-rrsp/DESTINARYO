@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/favicon_io/favicon.ico">
+    <title>Destinaryo</title>
+    <link rel="stylesheet" href="styleLanding.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <script src="Landmarks/zLandmarksResources/search.js"></script> 
+    
+</head>
+
+<body style="background-color: #FAF3E0;">
+
+  <nav class="navbar">
+    <div class="navbar-top-container">
+        <div class="navbar-icon-burger-container">
+            <a href="Destinaryo.htm">
+                <div class="navbar-logo-container">
+                    <img src="logo.png" alt="Destinaryo" class="navbar-logo">
+                </div>
+            </a>
+            <div class="burger-button" onclick="toggleNavbar()">☰</div>
+        </div>
+
+        <div class="button-searchbar-container" id="navbar-menu">
+            <div class="navbar-button-container">
+                <a href="Destinaryo.htm"><button class="navbar-button">Home</button></a>
+                <a href="Destinations.htm"><button class="navbar-button">Destinations</button></a>
+                <a href="aboutUs.htm"><button class="navbar-button">About Us</button></a>
+            </div>
+
+            <div class="searchbar-container">
+                <input type="text" class="searchbar" id="searchBox" placeholder="Search..." onkeyup="searchFiles()">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+</nav>
+
+
+    <div class="divider1"></div>
+
+      <div class="content-container">
+    
+        <div class="main-hero-container">
+          <div class="main-title"><h1>Destinaryo</h1>
+              <br><br>
+          <p><b>DESTINARYO</b> is your ultimate travel guide, helping you decide where to go for your next adventure. 
+              Whether you're looking for stunning beaches, breathtaking mountains, vibrant cities, or cultural landmarks, 
+              we provide the best destination ideas to match your travel style. From popular hotspots to hidden gems, 
+              <b>DESTINARYO</b> makes exploring easy and exciting.
+          </p>
+          <br>
+          <p>Let us inspire your journey and help you create unforgettable travel experiences!</p>
+          </div>
+          <div class="main-icon"><img src="image/logo-main.png" alt=""></div>
+      </div>
+        <div class="divider"></div>
+
+
+        <div class="CTA1">
+          <p class="CTA-checkOut">Check out Some the destinations!</p>
+      </div>
+      <div class="hero-section">
+         <div class="hero-section">
+  <div class="banner-container">
+      <img id="banner" src="boracay.png" alt="">
+  </div>
+  
+  <div class="description-container">
+      <div class="description">
+          <p id="description1">One of the most famous beaches in the world, Boracay’s White Beach is renowned for its powdery white sand, crystal-clear waters, and vibrant nightlife.</p>
+          <br><br>
+          <p id="description2">Whether you’re looking for a party scene or a relaxing beach retreat, Boracay has something for everyone.</p>
+      </div>
+  </div>
+</div>
+
+<script>
+  const slides = [
+      {
+          image: "boracay.png",
+          description1: "One of the most famous beaches in the world, Boracay’s White Beach is renowned for its powdery white sand, crystal-clear waters, and vibrant nightlife.",
+          description2: "Whether you’re looking for a party scene or a relaxing beach retreat, Boracay has something for everyone."
+      },
+      {
+          image: "bolinao.jpg",
+          description1: "A three-tiered waterfall system, Bolinao Falls is known for its aqua-blue waters, serene surroundings, and natural rock formations, making it an ideal spot for swimming and cliff diving.",
+          description2: "Surrounded by lush forests, Bolinao Falls provides a refreshing retreat for nature lovers and adventurers alike."
+      },
+      {
+          image: "banaue.jpeg",
+          description1: "The Banaue Rice Terraces, often called the 'Eighth Wonder of the World,' are an engineering marvel built by the Ifugao people over 2,000 years ago.",
+          description2: "These terraces are a testament to sustainable farming, showcasing breathtaking landscapes and rich cultural heritage."
+      },
+      {
+          image: "Paoay.jpg",
+          description1: "Paoay Church, also known as the San Agustin Church of Paoay, is a UNESCO World Heritage Site located in Ilocos Norte, Philippines. Built in 1710, it is famous for its distinctive Baroque architecture with massive buttresses, designed to withstand earthquakes.",
+          description2: "The church is a prime example of Earthquake Baroque style, blending European, Chinese, and Filipino influences."
+      }
+  ];
+
+  let index = 0;
+
+  function changeContent() {
+      index = (index + 1) % slides.length; // Loop back when reaching the end
+
+      document.getElementById("banner").src = slides[index].image;
+      document.getElementById("description1").textContent = slides[index].description1;
+      document.getElementById("description2").textContent = slides[index].description2;
+  }
+
+  setInterval(changeContent, 4000);
+</script>
+
+  </div>
+
+        <div class="divider"></div>
+
+        <div class="CTA">
+          <div class="CTA2">
+            <p class="CTA-explore">Explore the Philippines!</p>
+          </div>
+        </div>
+        
+        <!-------------------!!!!!!!!!!!!!!!!!-------------------------->
+        <div class="carousel-container">
+          <button class="prev-btn">❮</button>
+      
+          <div class="carousel-inner">
+              <div class="carousel-slide-container">
+                
+                  <div class="carousel-item-container">
+                      <div class="item"><img class="carousel-content" src="/image/mountain.png" alt="">
+                        <p>Lakes and Mountains</p>
+                      <a href="Landmarks/LakesAndMountains.htm">
+                        <button class="view-list-button">View List</button>
+                      </a>
+                      </div>
+
+                      <div class="item"><img class="carousel-content" src="/image/adventure.png" alt="">
+                        <p>Adventure Sites</p>
+                        <a href="Landmarks/AdventureSites.htm">
+                          <button class="view-list-button">View List</button>
+                        </a>
+                      </div>
+
+                      <div class="item"><img class="carousel-content" src="/image/historical.png" alt="">
+                        <p>Historical and Cultural Sites</p>
+                        <a href="Landmarks/HistoricalAndCulturalSites.htm">
+                          <button class="view-list-button">View List</button>
+                        </a></div>
+                  </div>
+      
+                  <div class="carousel-item-container">
+                      <div class="item"><img class="carousel-content" src="Landmarks/zLandmarksResources/allDestinations-img.jpg" alt="">
+                        <p>See All</p>
+                        <a href="Landmarks/zAllDestinations.htm">
+                          <button class="view-list-button">View List</button>
+                        </a>
+                      </div>
+
+                      <div class="item"><img class="carousel-content" src="Landmarks/Beaches/Boracay/Boracay-03.jpg" alt="">
+                      <p>Beaches</p>
+                      <a href="Landmarks/Beaches.htm">
+                        <button class="view-list-button">View List</button>
+                      </a>
+                    </div>
+
+                      <div class="item"><img class="carousel-content" src="/image/falls.png" alt="">
+                        <p>Waterfalls</p>
+                        <a href="Landmarks/WaterFalls.htm">
+                          <button class="view-list-button">View List</button>
+                        </a>
+                      </div>
+                 
+                    </div>
+              </div>
+          </div>
+      
+          <button class="next-btn">❯</button>
+      </div>
+      
+      <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const track = document.querySelector(".carousel-slide-container");
+          const slides = document.querySelectorAll(".carousel-item-container");
+          const prevBtn = document.querySelector(".prev-btn");
+          const nextBtn = document.querySelector(".next-btn");
+          
+      
+          let index = 0;
+          const totalSlides = slides.length;
+          
+          // Clone slides for infinite scrolling effect
+          const firstClone = slides[0].cloneNode(true);
+          const lastClone = slides[totalSlides - 1].cloneNode(true);
+      
+          track.appendChild(firstClone);
+          track.insertBefore(lastClone, slides[0]);
+      
+          const updateSlidePosition = () => {
+              track.style.transition = "transform 0.8s ease-in-out";
+              track.style.transform = `translateX(${-index * 100}%)`;
+          };
+      
+          nextBtn.addEventListener("click", () => {
+              index++;
+              updateSlidePosition();
+              setTimeout(() => {
+                  if (index >= totalSlides) {
+                      index = 0;
+                      track.style.transition = "none";
+                      track.style.transform = `translateX(${-index * 100}%)`;
+                  }
+              }, 800);
+          });
+      
+          prevBtn.addEventListener("click", () => {
+              index--;
+              updateSlidePosition();
+              setTimeout(() => {
+                  if (index < 0) {
+                      index = totalSlides - 1;
+                      track.style.transition = "none";
+                      track.style.transform = `translateX(${-index * 100}%)`;
+                  }
+              }, 800);
+          });
+      });
+      </script>
+      
+      <div class="carousel-container-mobile">
+        
+        <button class="prev-btn-mobile">❮</button>
+    
+        <div class="carousel-inner-mobile">
+            <div class="carousel-slide-container-mobile">
+              
+                <div class="carousel-item-container-mobile">
+                    <div class="item-mobile"><img class="carousel-content-mobile" src="Landmarks/zLandmarksResources/allDestinations-img.jpg" alt="">
+                      <p>See All</p>
+                    <a href="Landmarks/zAllDestinations.htm">
+                      <button class="view-list-button-mobile">View List</button>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item-container-mobile">
+                  <div class="item-mobile"><img class="carousel-content-mobile" src="image/beach.png" alt="">
+                    <p>Beaches</p>
+                    <a href="landmarks/Beaches.htm">
+                      <button class="view-list-button-mobile">View List</button>
+                  </a>
+                  </div>
+                </div>
+
+                <div class="carousel-item-container-mobile">
+                  <div class="item-mobile"><img class="carousel-content-mobile" src="image/falls.png" alt="">
+                    <p>waterfalls</p>
+                    <a href="Landmarks/WaterFalls.htm">
+                      <button class="view-list-button-mobile">View List</button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carousel-item-container-mobile">
+                  <div class="item-mobile"><img class="carousel-content-mobile" src="/image/mountain.png" alt="">
+                    <p>Lakes and Mountains</p>
+                    <a href="Landmarks/LakesAndMountains.htm">
+                      <button class="view-list-button-mobile">View List</button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carousel-item-container-mobile">
+                  <div class="item-mobile"><img class="carousel-content-mobile" src="/image/historical.png" alt="">
+                    <p>Historical and Cultural Sites</p>
+                    <a href="Landmarks/HistoricalAndCulturalSites.htm">
+                      <button class="view-list-button-mobile">View List</button>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carousel-item-container-mobile">
+                  <div class="item-mobile"><img class="carousel-content-mobile" src="/image/adventure.png" alt="">
+                    <p>Adventure Sites</p>
+                    <a href="Landmarks/AdventureSites.htm">
+                      <button class="view-list-button-mobile">View List</button>
+                    </a>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    
+        <button class="next-btn-mobile">❯</button>
+    </div>
+    
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".carousel-slide-container-mobile");
+    let slides = Array.from(document.querySelectorAll(".carousel-item-container-mobile"));
+    const prevBtn = document.querySelector(".prev-btn-mobile");
+    const nextBtn = document.querySelector(".next-btn-mobile");
+
+    let index = 1; // Start from 1 since we're using a cloned first item
+
+    // Clone first and last slide for infinite effect
+    const firstClone = slides[0].cloneNode(true);
+    const lastClone = slides[slides.length - 1].cloneNode(true);
+
+    firstClone.id = "first-clone";
+    lastClone.id = "last-clone";
+
+    // Correct order: Insert lastClone at the start, firstClone at the end
+    track.insertBefore(lastClone, slides[0]);
+    track.appendChild(firstClone);
+
+    // Update slides list after cloning
+    slides = Array.from(document.querySelectorAll(".carousel-item-container-mobile"));
+    let slideWidth = slides[0].clientWidth;
+
+    // Set initial position
+    track.style.transform = `translateX(${-index * slideWidth-2}px)`;
+
+    const moveSlide = () => {
+        track.style.transition = "transform 0.5s ease-in-out";
+        track.style.transform = `translateX(${-index * slideWidth-2}px)`;
+    };
+
+    nextBtn.addEventListener("click", () => {
+        if (index >= slides.length - 1) return;
+        index++;
+        moveSlide();
+        setTimeout(() => {
+            if (index === slides.length - 1) {
+                track.style.transition = "none";
+                index = 1;
+                track.style.transform = `translateX(${-index * slideWidth-2}px)`;
+            }
+        }, 500);
+    });
+
+    prevBtn.addEventListener("click", () => {
+        if (index <= 0) return;
+        index--;
+        moveSlide();
+        setTimeout(() => {
+            if (index === 0) {
+                track.style.transition = "none";
+                index = slides.length - 2;
+                track.style.transform = `translateX(${-index * slideWidth}px)`;
+            }
+        }, 500);
+    });
+
+    // Update slide width on resize
+    window.addEventListener("resize", () => {
+        slideWidth = document.querySelector(".carousel-item-container-mobile").clientWidth;
+        track.style.transition = "none"; // Prevent animation glitch
+        track.style.transform = `translateX(${-index * slideWidth}px)`;
+    });
+});
+
+function changeContent() {
+            index = (index + 1) % slides.length; // Loop back when reaching the end
+            document.getElementById("banner").src = slides[index].image;
+            document.getElementById("description1").textContent = slides[index].description1;
+            document.getElementById("description2").textContent = slides[index].description2;
+            }
+
+            setInterval(changeContent, 10000);
+
+
+            function toggleNavbar() {
+            document.getElementById("navbar-menu").classList.toggle("active");
+            }
+      </script>
+
+
+
+        <div class="emptyDiv"></div>
+
+      
+
+    
+      </div>
+
+
+
+      <div class="footer">
+        <div class="footer-elements-container">
+          <div class="footer-brand-container">
+            <a href="Destinaryo.htm">
+              <div class="footer-logo-container">
+                <img src="logo.png" alt="Destinaryo" class="footer-logo">
+              </div>
+              </a>
+          </div>
+          <div class="footer-buttons">
+            
+            <table class="footer-buttons-table">
+              <tr>
+                <td>
+                  <a href="aboutUs.htm"><button class="footer-button-link">About Us</button></a>
+                </td>
+                <td>
+                  <a href="Destinations.htm"><button class="footer-button-link">Destinations</button></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="Destinaryo.htm"><button class="footer-button-link">Home</button></a>
+                </td>
+                <td>
+                  <a href="referencePage.htm"><button class="footer-button-link">References</button></a>
+                </td>
+              </tr>
+            </table>     
+          </div>
+        </div>
+        <div class="footer-brand">
+          <p class="footer-brand-subtitle">Disclaimer: Photos and links are sourced externally—full credit to the original owners. This content is for educational purposes only.</p>
+        </div>
+      </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Gawang Pogi-->

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines Tourist Spots</title>
+    <link rel="stylesheet" href="zLandmarksResources/Landmarks.css">
+    <link rel="stylesheet" href="../Navbar.css">
+    <script src="zLandmarksResources/search.js"></script> 
+    <link rel="icon" type="image/x-icon" href="../image/favicon_io/favicon.ico">
+</head>
+
+<body style="background-color: #FAF3E0;">
+
+  
+
+  <nav class="navbar">
+    <div class="navbar-top-container">
+        <div class="navbar-icon-burger-container">
+            <a href="../Destinaryo.htm">
+                <div class="navbar-logo-container">
+                    <img src="../logo.png" alt="Destinaryo" class="navbar-logo">
+                </div>
+            </a>
+            <div class="burger-button" onclick="toggleNavbar()">☰</div>
+        </div>
+
+        <div class="button-searchbar-container" id="navbar-menu">
+            <div class="navbar-button-container">
+                <a href="../Destinaryo.htm"><button class="navbar-button">Home</button></a>
+                <a href="../Destinations.htm"><button class="navbar-button">Destinations</button></a>
+                <a href="../aboutUs.htm"><button class="navbar-button">About Us</button></a>
+            </div>
+
+            <div class="searchbar-container">
+                <input type="text" class="searchbar" id="searchBox" placeholder="Search..." onkeyup="searchFiles()">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            
+        </div>
+    </div>
+
+   <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+            <li><a href="../Destinaryo.htm">Home</a></li>
+            <li><a href="../Destinations.htm">Destinations</a></li>
+            <li><a href="zAllDestinations.htm">Philippines Tourist Spots</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="mainContainer">
+        <div class="headerContainer">
+            <h1 class="header">Philippines Tourist Spots</h1>
+            <P class="sub-header">PAGE 1</p>
+        </div>
+
+
+        <div class="card-container">
+          <a href="WaterFalls/AguinidFalls/AguinidFalls.htm" class="cardLink">
+            <div class="card1" id="falls">
+              <div class="image-container">
+                <img src="WaterFalls/AguinidFalls/AguinidFalls-01.jpg" alt="AguinidFalls">
+                <img src="WaterFalls/AguinidFalls/AguinidFalls-02.jpg" alt="AguinidFalls">
+                <img src="WaterFalls/AguinidFalls/AguinidFalls-03.jpg" alt="AguinidFalls">
+                <img src="WaterFalls/AguinidFalls/AguinidFalls-04.jpg" alt="AguinidFalls">
+                <img src="WaterFalls/AguinidFalls/AguinidFalls-05.jpg" alt="AguinidFalls">
+  
+              </div>
+                <div class="text-content">
+                    <p class="name">Aguinid Falls – Samboan, Cebu</p>
+                    <p class="details">A multi-tiered waterfall in Samboan, Cebu, known for its scenic rock formations, cool cascading waters, and thrilling trek that requires climbing through different levels using ropes, making it an exciting adventure for nature lovers.</p>
+                </div>
+            </div>
+            </a>
+  
+            <a href="WaterFalls/AliwagwagFalls/AliwagwagFalls.htm" class="cardLink">
+            <div class="card1" id="falls2">
+              <div class="image-container">
+                <img src="WaterFalls/AliwagwagFalls/AliwagwagFalls-01.jpg" alt="AliwagFalls">
+                <img src="WaterFalls/AliwagwagFalls/AliwagwagFalls-02.jpg" alt="AliwagFalls">
+                <img src="WaterFalls/AliwagwagFalls/AliwagwagFalls-03.jpg" alt="AliwagFalls">
+                <img src="WaterFalls/AliwagwagFalls/AliwagwagFalls-04.jpg" alt="AliwagFalls">
+                <img src="WaterFalls/AliwagwagFalls/AliwagwagFalls-05.jpg" alt="AliwagFalls">
+  
+              </div>
+                <div class="text-content">
+                    <p class="name">Aliwagwag Falls – Davao Oriental</p>
+                    <p class="details">Often dubbed the "stairway to heaven," Aliwagwag Falls is a breathtaking multi-tiered waterfall cascading through lush forests, making it one of the most majestic waterfalls in the Philippines.</p>
+                </div>
+            </div>
+            </a>
+
+            <a href="Beaches/AlonaBeach/AlonaBeach.htm" class="cardLink">
+              <div class="card1" id="Beaches">
+                <div class="image-container">
+                    <img src="Beaches/AlonaBeach/AlonaBeach-01.jpg " alt="">
+                    <img src="Beaches/AlonaBeach/AlonaBeach-02.jpg " alt="">
+                    <img src="Beaches/AlonaBeach/AlonaBeach-03.jpg " alt="">
+                    <img src="Beaches/AlonaBeach/AlonaBeach-04.jpg " alt="">
+                    <img src="Beaches/AlonaBeach/AlonaBeach-05.jpg " alt="">
+                </div>
+                <div class="text-content">
+                    <p class="name">Alona Beach – Panglao, Bohol</p>
+                    <p class="details">
+                        A world-class diving and beach destination known for its soft white sand, clear waters, and vibrant coral reefs.
+                    </p>
+                </div>
+              </div>
+            </a>
+
+            <a href="Beaches/AndaBeach/AndaBeach.htm" class="cardLink">
+              <div class="card1" id="Beaches2">
+                <div class="image-container">
+                    <img src="Beaches/AndaBeach/AndaBeach-01.jpg " alt="">
+                    <img src="Beaches/AndaBeach/AndaBeach-02.jpg " alt="">
+                    <img src="Beaches/AndaBeach/AndaBeach-03.jpg " alt="">
+                    <img src="Beaches/AndaBeach/AndaBeach-04.jpg " alt="">
+                </div>
+                  <div class="text-content">
+                      <p class="name">Anda Beach – Bohol</p>
+                      <p class="details">
+                          Often compared to Boracay for its white sand and clear waters, Anda Beach is a hidden gem offering a more peaceful and untouched paradise in Bohol.                
+                      </p>
+                  </div>                
+              </div>
+            </a>
+  
+            <a href="Beaches/AnguibBeach/AnguibBeach.htm" class="cardLink">
+              <div class="card1" id="Beaches5">
+                <div class="image-container">
+                    <img src="Beaches/AnguibBeach/AnguibBeach-01.JPG " alt="">
+                    <img src="Beaches/AnguibBeach/AnguibBeach-02.jpg " alt="">
+                    <img src="Beaches/AnguibBeach/AnguibBeach-03.jpg " alt="">
+                    <img src="Beaches/AnguibBeach/AnguibBeach-04.jpg " alt="">
+                    <img src="Beaches/AnguibBeach/AnguibBeach-05.jpg " alt="">
+                </div>
+                  <div class="text-content">
+                      <p class="name">Anguib Beach- Sta. Ana, Cagayan                    </p>
+                      <p class="details">
+                        A secluded paradise in Cagayan, boasting powdery white sand, crystal-clear waters, and vibrant marine life. Its calm shores and peaceful ambiance make it a perfect spot for swimming, kayaking, or simply unwinding away from crowded beaches.
+  
+                      </p>                
+                  </div>
+              </div>
+            </a>
+
+            <a href="AdventureSites/AnjoWorldAndSnowWorld/AnjoWorldAndSnowWorld.htm" class="cardLink">
+              <div class="card1" id="AdventureSites">
+                <div class="image-container">
+                    <img src="AdventureSites/AnjoWorldAndSnowWorld/AnjoWorldAndSnowWorld-01.jpg" alt="">
+                    <img src="AdventureSites/AnjoWorldAndSnowWorld/AnjoWorldAndSnowWorld-02.jpg" alt="">
+                    <img src="AdventureSites/AnjoWorldAndSnowWorld/AnjoWorldAndSnowWorld-03.jpg" alt="">
+                    <img src="AdventureSites/AnjoWorldAndSnowWorld/AnjoWorldAndSnowWorld-04.jpg" alt="">
+                    <img src="AdventureSites/AnjoWorldAndSnowWorld/AnjoWorldAndSnowWorld-05.jpg" alt="">
+                </div>
+                  <div class="text-content">
+                      <p class="name">Anjo World and Snow World – Cebu</p>
+                      <p class="details">
+                        The Cebu’s largest theme park, offers thrilling rides, themed attractions, and carnival games. Snow World adds icy slides, sculptures, and a winter wonderland experience. Perfect for families and adventure seekers, the park blends tropical fun with a cool escape, making it one of the top amusement destinations in the Visayas region.                    </p>
+                  </div>    
+              </div>
+            </a>
+
+            <a href="WaterFalls/AsikAsikFalls/AsikAsikFalls.htm" class="cardLink">
+              <div class="card1" id="falls3">
+                <div class="image-container">
+                  <img src="WaterFalls/AsikAsikFalls/AsikAsikFalls-01.jpg" alt="AsikAsikFalls">
+                  <img src="WaterFalls/AsikAsikFalls/AsikAsikFalls-02.jpg" alt="AsikAsikFalls">
+                  <img src="WaterFalls/AsikAsikFalls/AsikAsikFalls-03.jpg" alt="AsikAsikFalls">
+                  <img src="WaterFalls/AsikAsikFalls/AsikAsikFalls-04.jpg" alt="AsikAsikFalls">
+                  <img src="WaterFalls/AsikAsikFalls/AsikAsikFalls-05.jpg" alt="AsikAsikFalls">
+                  
+                </div>
+                  <div class="text-content">
+                      <p class="name">Asik-Asik Falls – North Cotabato</p>
+                      <p class="details">A breathtaking natural wonder where water cascades from a lush, moss-covered cliff, creating a stunning curtain-like effect. Hidden within the forests of Alamada, this secluded paradise offers a serene and refreshing escape for nature lovers and adventurers.</p>
+                  </div>
+              </div>
+              </a>
+              <a href="HistoricalAndCulturalSites/BanaueRiceTerraces/BanaueRiceTerraces.htm" class="cardLink">
+                <div class="card1" id="HistoricalAndCultural">
+                  <div class="image-container">
+                    <img src="HistoricalAndCulturalSites/BanaueRiceTerraces/BanaueRiceTerraces-01.jpeg" alt="">
+                    <img src="HistoricalAndCulturalSites/BanaueRiceTerraces/BanaueRiceTerraces-02.jpg" alt="">
+                    <img src="HistoricalAndCulturalSites/BanaueRiceTerraces/BanaueRiceTerraces-03.jpg" alt="">
+                    <img src="HistoricalAndCulturalSites/BanaueRiceTerraces/BanaueRiceTerraces-04.jpg" alt="">
+                    <img src="HistoricalAndCulturalSites/BanaueRiceTerraces/BanaueRiceTerraces-05.jpg" alt="">
+                    
+                  </div>
+                    <div class="text-content">
+                        <p class="name">Banaue Rice Terraces – Ifugao</p>
+                        <p class="details">
+                            A UNESCO World Heritage Site and one of the most remarkable landscapes in the Philippines, the Banaue Rice Terraces are an engineering marvel built by the Ifugao people over 2,000 years ago.                    
+                        </p>
+                    </div>
+                </div>
+              </a>
+
+              <a href="Beaches/BanolBeach/BanolBeach.htm" class="cardLink">
+                <div class="card1" id="Beaches4">
+                  <div class="image-container">
+                      <img src="Beaches/BanolBeach/BanolBeach-01.jpg " alt="">
+                      <img src="Beaches/BanolBeach/BanolBeach-02.jpg " alt="">
+                      <img src="Beaches/BanolBeach/BanolBeach-03.jpg " alt="">
+                      <img src="Beaches/BanolBeach/BanolBeach-04.jpg " alt="">
+                      <img src="Beaches/BanolBeach/BanolBeach-05.jpg " alt="">
+                  </div>
+                    <div class="text-content">
+                        <p class="name">Banol Beach – Coron, Palawan</p>
+                        <p class="details">
+                            A small yet breathtaking beach in Coron, Banol Beach is known for its powdery white sand, turquoise waters, and dramatic limestone cliffs.
+                        </p>
+                    </div>
+                </div>
+              </a>
+            
+              <a href="HistoricalAndCulturalSites/BarasoainChurch/BarasoainChurch.htm" class="cardLink">
+                <div class="card1" id="HistoricalAndCultural2">
+                  <div class="image-container">
+                    <img src="HistoricalAndCulturalSites/BarasoainChurch/BarasoainChurch-01.jpg" alt="">
+                    <img src="HistoricalAndCulturalSites/BarasoainChurch/BarasoainChurch-02.jpg" alt="">
+                    <img src="HistoricalAndCulturalSites/BarasoainChurch/BarasoainChurch-03.jpg" alt="">
+                  </div>
+                    <div class="text-content">
+                        <p class="name">Barasoain Church – Bulacan</p>
+                        <p class="details">
+                            Known as the “Cradle of Democracy in the East,” Barasoain Church in Malolos, Bulacan, is one of the most historically significant churches in the Philippines. It played a crucial role in the Philippine Revolution, serving as the site of the First Philippine Congress in 1898, where the Malolos Constitution was drafted.
+                        </p>
+                    </div>                
+                </div>
+              </a>
+
+
+        
+            
+            
+        </div>
+        
+        <ul class="pagination">
+          <li class="arrow"><a href="#">&laquo;</a></li>
+          <a href="zAllDestinations.htm"><li class="active">1</li></a>
+          <a href="zAllDestinations-2.htm"><li >2</li></a>
+          <a href="zAllDestinations-3.htm"><li >3</li></a>
+          <a href="zAllDestinations-4.htm"><li >4</li></a>
+          <a href="zAllDestinations-5.htm"><li >5</li></a>
+          <li class="arrow"><a href="zAllDestinations.2.htm">&raquo;</a></li>
+        </ul>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+      <div class="footer-elements-container">
+        <div class="footer-brand-container">
+          <a href=" ../../Destinaryo.htm">
+            <div class="footer-logo-container">
+              <img src=" ../../logo.png" alt="Destinaryo" class="footer-logo">
+            </div>
+            </a>
+        </div>
+        <div class="footer-buttons">
+          
+          <table class="footer-buttons-table">
+            <tr>
+              <td>
+                <a href=" ../../aboutUs.htm"><button class="footer-button-link">About Us</button></a>
+              </td>
+              <td>
+                <a href=" ../../Desstinations.htm"><button class="footer-button-link">Destinations</button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href=" ../../Destinaryo.htm"><button class="footer-button-link">Home</button></a>
+              </td>
+              <td>
+                <a href=" ../../referencePage.htm"><button class="footer-button-link">References</button></a>
+              </td>
+            </tr>
+          </table>     
+        </div>
+      </div>
+      <div class="footer-brand">
+        <p class="footer-brand-subtitle">Disclaimer: Photos and links are sourced externally—full credit to the original owners. This content is for educational purposes only.</p>
+      </div>
+    </div>
+</body>
+<script src="zLandmarksResources/Landmarks.js"></script>
+</html>

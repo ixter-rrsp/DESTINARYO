@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="icon" type="image/x-icon" href="image/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="Navbar.css">
+    <script src="/Landmarks/zLandmarksResources/search.js"></script>
+</head>
+
+
+<body>
+  
+  <nav class="navbar">
+    <div class="navbar-top-container">
+        <div class="navbar-icon-burger-container">
+            <a href="Destinaryo.htm">
+                <div class="navbar-logo-container">
+                    <img src="logo.png" alt="Destinaryo" class="navbar-logo">
+                </div>
+            </a>
+            <div class="burger-button" onclick="toggleNavbar()">☰</div>
+        </div>
+
+        
+        <div class="button-searchbar-container" id="navbar-menu">
+            <div class="navbar-button-container">
+                <a href="Destinaryo.htm"><button class="navbar-button">Home</button></a>
+                <a href="Destinations.htm"><button class="navbar-button">Destinations</button></a>
+                <a href="aboutUs.htm"><button class="navbar-button">About Us</button></a>
+            </div>
+
+            <div class="searchbar-container">
+                <input type="text" class="searchbar" id="searchBox" placeholder="Search..." onkeyup="searchFiles()">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+            <li><a href="Destinaryo.htm">Home</a></li>
+            <li><a href="aboutUs.htm">About Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+      
+
+    <div class="content-container">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="image/logo-main.png" alt="">
+            </div>
+
+            <div class="title-container">
+                <h1>Welcome to Destinaryo</h1>
+            </div>
+
+            <div class="welcome-message">
+                <p>At DESTINARYO, we believe that every journey should be an unforgettable adventure. Whether you're a first-time visitor or a seasoned traveler, our goal is to introduce you to the best places to visit in the Philippines. From stunning beaches and historical landmarks to hidden gems and local attractions, we provide expert recommendations to help you plan your perfect trip.
+                </p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="title-container">
+            <h2>Our Story</h2>
+        </div>
+
+        <div class="story-message">
+            <p>DESTINARYO was created as a project for our Web Technology subject. Our team wanted to develop a platform that would not only fulfill our academic requirements but also serve a greater purpose helping travelers discover the beauty of the Philippines.
+
+                As students , we saw the need for a website that provides well organized and reliable travel recommendations. We realized that many travelers struggle with planning their trips due to the overwhelming number of choices online, so we wanted to simplify the process by offering a carefully selected list of must-visit places.
+            </p>
+        </div>
+        
+
+        <div class="divider"></div>
+
+        <div class="title-container">
+            <h2>Members</h2>
+            
+        </div>
+        <h5 style="color: #1B4F72; font-family: Arial;">GROUP 1 BSIT 1A</h5>
+
+        <div class="member-row">
+          
+            <div class="members">
+                <div class="profile-image"><img src="profiles/reynier.jpg" alt=""></div>
+                <p class="member-name">Reynier P. Espanola</p>
+                <p class="member-role">Website Developer</p>
+            </div>
+            <div class="members">
+                <div class="profile-image"><img src="profiles/prince.jpg" alt=""></div>
+                <p class="member-name">Prince Yshidriel P. Muncada</p>
+                <p class="member-role">Website Developer</p>
+            </div>
+        </div>
+
+        <div class="member-row">
+            <div class="members">
+                <div class="profile-image"><img src="profiles/amado.png" alt=""></div>
+                <p class="member-name">Nina G. Amado</p>
+                <p class="member-role">Website Designer</p>
+            </div>
+            <div class="members">
+                <div class="profile-image"><img src="profiles/freddie.jpg" alt=""></div>
+                <p class="member-name">Freddie T. Mariano II</p>
+                <p class="member-role">Website Designer</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+      <div class="footer-elements-container">
+        <div class="footer-brand-container">
+          <a href="Destinaryo.htm">
+            <div class="footer-logo-container">
+              <img src="logo.png" alt="Destinaryo" class="footer-logo">
+            </div>
+            </a>
+        </div>
+        <div class="footer-buttons">
+          
+          <table class="footer-buttons-table">
+            <tr>
+              <td>
+                <a href="aboutUs.htm"><button class="footer-button-link">About Us</button></a>
+              </td>
+              <td>
+                <a href="Desstinations.htm"><button class="footer-button-link">Destinations</button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="Destinaryo.htm"><button class="footer-button-link">Home</button></a>
+              </td>
+              <td>
+                <a href="referencePage.htm"><button class="footer-button-link">References</button></a>
+              </td>
+            </tr>
+          </table>     
+        </div>
+      </div>
+      <div class="footer-brand">
+          <p class="footer-brand-subtitle">Disclaimer: Photos and links are sourced externally—full credit to the original owners. This content is for educational purposes only.</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleNavbar() {
+                document.getElementById("navbar-menu").classList.toggle("active");
+                }
+    </script>
+</body>
+
+</html>

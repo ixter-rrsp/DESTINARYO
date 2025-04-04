@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Sites 2</title>
+    <link rel="stylesheet" href="zLandmarksResources/Landmarks.css">
+    <link rel="stylesheet" href="../Navbar.css">
+    <script src="zLandmarksResources/search.js"></script> 
+    <link rel="icon" type="image/x-icon" href="../image/favicon_io/favicon.ico">
+</head>
+
+<body style="background-color: #FAF3E0;">
+  
+  <nav class="navbar">
+    <div class="navbar-top-container">
+      <div class="navbar-icon-burger-container">
+        <a href=" ../Destinaryo.htm">
+          <div class="navbar-logo-container">
+            <img src="../logo.png" alt="Destinaryo" class="navbar-logo">
+          </div>
+        </a>
+        <div class="burger-button" onclick="toggleNavbar()">
+          ☰
+        </div>
+      </div>
+  
+      <div class="button-searchbar-container" id="navbar-menu">
+        <div class="navbar-button-container">
+          <a href="../Destinaryo.htm"><button class="navbar-button">Home</button></a>
+          <a href="../Destinations.htm"><button class="navbar-button">Destinations</button></a>
+          <a href="../aboutUs.htm"><button class="navbar-button">About Us</button></a>
+        </div>
+        
+        <div class="searchbar-container">
+          <input type="text" class="searchbar" id="searchBox" placeholder="Search..." onkeyup="searchFiles()">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+          <div id="searchResults" class="search-results"></div>
+      </div>
+      </div>
+    </div>
+   
+    <div class="breadcrumb-container">
+      <ul class="breadcrumb">
+        <li><a href="../Destinaryo.htm">Home</a></li>
+        <li><a href="../Destinations.htm">Destinations</a></li>
+        <li><a href="AdventureSites-2.htm">Adventure Sites 2</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="mainContainer">
+    <div class="headerContainer">
+      <h1 class="header">Adventure Sites</h1>
+      <!-- change the page every new file -->
+      <p class="sub-header">PAGE 2</p> 
+    </div>
+    
+    <div class="card-container">
+      <!-- destination portal path: Category Folder / Destination Folder / html file -->
+      <a href="AdventureSites/DahilayanAdventurePark/DahilayanAdventurePark.htm" class="cardLink">
+        <div class="card1" id="AdventureSites">
+          <div class="image-container">
+            <!-- images of the destination path: Category Folder / Destination Folder / Image name all 5 -->
+            <img src="AdventureSites/DahilayanAdventurePark/DahilayanAdventurePark-01.jpg" alt="Dahilayan AdventurePark">
+            <img src="AdventureSites/DahilayanAdventurePark/DahilayanAdventurePark-02.jpg" alt="Dahilayan AdventurePark">
+            <img src="AdventureSites/DahilayanAdventurePark/DahilayanAdventurePark-03.jpg" alt="Dahilayan AdventurePark">
+            <img src="AdventureSites/DahilayanAdventurePark/DahilayanAdventurePark-04.jpg" alt="Dahilayan AdventurePark">
+            <img src="AdventureSites/DahilayanAdventurePark/DahilayanAdventurePark-05.jpg" alt="Dahilayan AdventurePark">
+          </div>
+          
+          <div class="text-content">
+            <!-- destination title -->
+            <p class="name">Dahilayan AdventurePark – Bukidnon</p>
+            <!-- short detail of destination -->
+            <p class="details">A top extreme adventure park in Bukidnon, offering Asia’s longest dual zipline, rope courses, and ATV rides. Its cool mountain setting and adrenaline-pumping activities make it a must-visit for thrill-seekers and nature lovers.
+            </p>
+          </div>    
+        </div>
+      </a>
+      
+      <a href="AdventureSites/DanaoAdventurePark/DanaoAdventurePark.htm" class="cardLink">
+        <div class="card1" id="AdventureSites2">
+          <div class="image-container">
+            <img src="AdventureSites/DanaoAdventurePark/DanaoAdventurePark-01.jpg" alt="Danao Adventure Park">
+            <img src="AdventureSites/DanaoAdventurePark/DanaoAdventurePark-02.jpg" alt="Danao Adventure Park">
+            <img src="AdventureSites/DanaoAdventurePark/DanaoAdventurePark-03.jpg" alt="Danao Adventure Park">
+            <img src="AdventureSites/DanaoAdventurePark/DanaoAdventurePark-04.jpg" alt="Danao Adventure Park">
+            <img src="AdventureSites/DanaoAdventurePark/DanaoAdventurePark-05.jpg" alt="Danao Adventure Park">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Danao Adventure Park – Bohol</p>
+            <p class="details">Located in Bohol, this eco-adventure park features heart-pounding activities such as canyon swinging, ziplining, caving, and rappelling. Nestled in a lush landscape, it provides a thrilling outdoor experience for adventure enthusiasts.
+            </p>
+          </div>   
+        </div>
+      </a>
+
+      <a href="AdventureSites/DinosaursIsland/DinosaursIsland.htm" class="cardLink">
+        <div class="card1" id="AdventureSites3">
+          <div class="image-container">
+            <img src="AdventureSites/DinosaursIsland/DinosaursIsland-01.jpg" alt="Dinosaur Island">
+            <img src="AdventureSites/DinosaursIsland/DinosaursIsland-02.jpg" alt="Dinosaur Island">
+            <img src="AdventureSites/DinosaursIsland/DinosaursIsland-03.jpg" alt="Dinosaur Island">
+            <img src="AdventureSites/DinosaursIsland/DinosaursIsland-04.jpg" alt="Dinosaur Island">
+            <img src="AdventureSites/DinosaursIsland/DinosaursIsland-05.jpg" alt="Dinosaur Island">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Dinosaur Island – Pampanga</p>
+            <p class="details">A dinosaur-themed park in Pampanga, featuring life-sized, animatronic dinosaurs. Visitors can enjoy interactive exhibits, fossil displays, and a prehistoric jungle tour, making it an exciting attraction for kids and dinosaur lovers.
+            </p>
+          </div>
+            </div>
+      </a>
+
+      <a href="AdventureSites/EnchantedKingdom/EnchantedKingdom.htm" class="cardLink">
+        <div class="card1" id="AdventureSites4">
+          <div class="image-container">
+            <img src="AdventureSites/EnchantedKingdom/EnchantedKingdom-01.jpg" alt="Enchanted Kingdom">
+            <img src="AdventureSites/EnchantedKingdom/EnchantedKingdom-02.jpg" alt="Enchanted Kingdom">
+            <img src="AdventureSites/EnchantedKingdom/EnchantedKingdom-03.jpg" alt="Enchanted Kingdom">
+            <img src="AdventureSites/EnchantedKingdom/EnchantedKingdom-04.jpg" alt="Enchanted Kingdom">
+            <img src="AdventureSites/EnchantedKingdom/EnchantedKingdom-05.jpg" alt="Enchanted Kingdom">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Enchanted Kingdom – Laguna</p>
+            <p class="details">The most popular theme park in the Philippines, Enchanted Kingdom offers thrilling rides, magical experiences, and family-friendly entertainment.
+              </p>
+          </div>
+        </div>
+      </a> 
+      
+      <a href="AdventureSites/GloriousFantasyland/GloriousFantasyland.htm" class="cardLink">
+        <div class="card1" id="AdventureSites5">
+          <div class="image-container">
+            <img src="AdventureSites/GloriousFantasyland/GloriousFantasyland-01.jpg" alt="Glorious Fantasyland">
+            <img src="AdventureSites/GloriousFantasyland/GloriousFantasyland-02.jpg" alt="Glorious Fantasyland">
+            <img src="AdventureSites/GloriousFantasyland/GloriousFantasyland-03.jpg" alt="Glorious Fantasyland">
+            <img src="AdventureSites/GloriousFantasyland/GloriousFantasyland-04.jpg" alt="Glorious Fantasyland">
+            <img src="AdventureSites/GloriousFantasyland/GloriousFantasyland-05.jpg" alt="Glorious Fantasyland">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Glorious Fantasyland – Zamboanga del Norte</p>
+            <p class="details">
+             A grand amusement park in Zamboanga del Norte, featuring colorful rides, dazzling light shows, and live entertainment. It is one of Mindanao’s biggest theme parks, providing fun-filled experiences for visitors of all ages.
+
+            </p>  
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <ul class="pagination">
+      <li class="arrow"><a href="AdventureSites.htm">&laquo;</a></li>
+      <a href="AdventureSites.htm"><li>1</li></a>
+      <a href="AdventureSites-2.htm"><li class="active">2</li></a>
+      <a href="AdventureSites-3.htm"><li >3</li></a>
+      <a href="AdventureSites-4.htm"><li >4</li></a>
+      <a href="AdventureSites-3.htm"><li class="arrow">&raquo;</li></a>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <div class="footer-elements-container">
+      <div class="footer-brand-container">
+        <a href=" ../Destinaryo.htm">
+          <div class="footer-logo-container">
+            <img src=" ../logo.png" alt="Destinaryo" class="footer-logo">
+          </div>
+        </a>
+      </div>
+      
+      <div class="footer-buttons">
+        <table class="footer-buttons-table">
+          <tr>
+            <td>
+              <a href=" ../aboutUs.htm"><button class="footer-button-link">About Us</button></a>
+            </td>
+            <td>
+              <a href=" ../Destinations.htm"><button class="footer-button-link">Destinations</button></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href=" ../Destinaryo.htm"><button class="footer-button-link">Home</button></a>
+            </td>
+            <td>
+              <a href=" ../referencePage.htm"><button class="footer-button-link">References</button></a>
+            </td>
+          </tr>
+        </table>     
+      </div>
+    </div>
+    
+    <div class="footer-brand">
+      <p class="footer-brand-subtitle">Disclaimer: Photos and links are sourced externally—full credit to the original owners. This content is for educational purposes only.</p>
+    </div>
+  </div>
+
+<script src="zLandmarksResources/Landmarks.js"></script>
+</body>
+</html>

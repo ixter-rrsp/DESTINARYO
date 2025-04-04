@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'customFont';
+    src: url('DMSerifText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: custom-title-page;
+    src: url(fonts/THEBOLDFONT-FREEVERSION.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: custom-header-page;
+    src: url(fonts/THEBOLDFONT-FREEVERSION.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mainContainer{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.header {
+    margin-top: 2%;
+    font-family: custom-header-page;
+    text-align: center;
+    color: #1B4F72;
+    font-size: clamp(20px, 10vw, 75px);
+    text-shadow: 3px 3px 6px rgba(178, 190, 181, 0.7); 
+    letter-spacing: 0.5vw;
+}
+
+
+.cell{
+    padding-bottom: 5vh;
+    justify-content: left;
+    align-items: left;
+    height: 100%;
+    width: 50%;
+}
+
+.cellInfo{
+    padding-bottom: 5vh;
+    justify-content: right;
+    align-items: right;
+    height: 100%;
+    width: 50%;
+}
+
+.lastCell{
+    position: absolute; left:35%;
+    padding-bottom: 5vh;
+    justify-content: right;
+    align-items: right;
+    height: 100%;
+    max-height: fit-content;
+    width: 40%;
+}
+
+.quickScroll{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%; 
+    width: 25%; 
+    background-color: rgba(165, 42, 42, 0); 
+    position: absolute; top: 13%; left: 0;
+    position: fixed;
+}
+
+.QScontainer{
+    justify-self: center;
+    width: 80%;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.cardLink{
+    text-decoration:none;
+    cursor: auto;
+    
+}
+
+.card1 {
+    color: #8B4513;
+    background-color: #FFEB99;
+    display: flex;
+    border-radius: 10px;
+    font-family: custom-title-page;
+    box-shadow: 10px 10px 0px #B2BEB5;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    padding: 5%;
+    height: clamp(50px, 30vw, 350px);
+    width: 60%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+
+.image-container {
+    width: 90%;
+    height: 65%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.452);
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.image-container img:first-child {
+    opacity: 1;
+}
+
+.name {
+    padding-top: 8%;
+    font-size: 2vw;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.table{
+  width: 74%; 
+  margin-top: 10vh; 
+  margin-left: 10%;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    @font-face {
+        font-family: 'customFont';
+        src: url('DMSerifText-Regular') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .mainContainer{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    
+    .cell, .cellInfo, .lastCell {
+      display: flex;
+      align-items: center;
+      text-align: center; 
+  }
+    
+    .lastCell{
+    position: absolute; left: 25%;
+  }
+  
+    .quickScroll{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%; 
+        width: 25%; 
+        background-color: rgba(165, 42, 42, 0); 
+        position: absolute; top: 13%; left: 0;
+        position: fixed;
+    }
+    
+    .QScontainer{
+        justify-self: center;
+        width: 80%;
+        border: solid 1px black;
+        border-radius: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    .card1 {
+        
+        padding: 10%;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        background-color: #FFEB99;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 10px 10px 0px #B2BEB5;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: clamp(50px, 40vw, 400px); 
+        height: 100%; 
+        transition: transform 0.3s ease;
+        margin-left: -10%;
+    }
+    
+    
+
+    
+    .image-container {
+        width: clamp(35px, 30vw, 300px);
+        height: clamp(35px, 30vw, 300px);
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.452); 
+    }
+
+    
+    .image-container img {
+        width: clamp(35px, 30vw, 300px); 
+        height: clamp(35px, 30vw, 300px); 
+        object-fit: cover;
+        border-radius: 20px;
+        position: absolute;
+        visibility: hidden; 
+        opacity: 0;
+    }
+    
+    .image-container img:first-child {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+
+    .name{
+      padding-top: 10%;
+      font-size: 4vw;
+  }
+
+    .table{
+      display: flex;
+      flex-direction: column;
+      width: 74%; 
+      max-width: fit-content;
+      margin-top: 5vh; 
+      margin-left: 0;
+    }
+  } 

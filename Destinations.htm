@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinaryo</title>
+    <link rel="stylesheet" href="Destinations.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <script src="/Landmarks/zLandmarksResources/search.js"></script> 
+</head>
+
+<body style="background-color: #FAF3E0;">
+
+  <nav class="navbar">
+    <div class="navbar-top-container">
+        <div class="navbar-icon-burger-container">
+            <a href="Destinaryo.htm">
+                <div class="navbar-logo-container">
+                    <img src="logo.png" alt="Destinaryo" class="navbar-logo">
+                </div>
+            </a>
+            <div class="burger-button" onclick="toggleNavbar()">☰</div>
+        </div>
+
+        <div class="button-searchbar-container" id="navbar-menu">
+            <div class="navbar-button-container">
+                <a href="Destinaryo.htm"><button class="navbar-button">Home</button></a>
+                <a href="Destinations.htm"><button class="navbar-button">Destinations</button></a>
+                <a href="aboutUs.htm"><button class="navbar-button">About Us</button></a>
+            </div>
+
+            <div class="searchbar-container">
+                <input type="text" class="searchbar" id="searchBox" placeholder="Search..." onkeyup="searchFiles()">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <div id="searchResults" class="search-results"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+            <li><a href="Destinaryo.htm">Home</a></li>
+            <li><a href="Destinations.htm">Destinations</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="mainContainer">
+      <div class="headerContainer">
+      <p class="header">DESTINARYO</p>
+      </div>
+          <table class="table"> 
+            <tr class="rows">
+              <td class="cell">
+                <a href="Landmarks/AdventureSites.htm"  class="cardLink">
+                  <div class="card1" id="AdventureSites">
+                    <div class="image-container">
+                      <img src="/Landmarks/AdventureSites/EnchantedKingdom/EnchantedKingdom-02.jpg" alt="">
+                      <img src="/Landmarks/AdventureSites/PeoplesParkInTheSky/PeopleParkInTheSky-04.jpg" alt="">
+                      <img src="/Landmarks/AdventureSites/DinosaursIsland/DinosaursIsland-05.jpg" alt="">
+                      <img src="/Landmarks/AdventureSites/SkyWaterPark/SkyWaterPark-02.jpg" alt="">
+                      <img src="/Landmarks/AdventureSites/InflatableIsland/InflatableIsland-03.jpg " alt="">
+                    </div>
+                    <p class="name">Adventure Sites</p>
+                  </div>
+                </a>
+              </td>
+    
+              <td class="cell">
+                <a href="Landmarks/Beaches.htm"  class="cardLink">
+                  <div class="card1" id="Beaches">
+                    <div class="image-container">
+                      <img src="/Landmarks/Beaches/Boracay/Boracay-04.png" alt="">
+                      <img src="/Landmarks/Beaches/AlonaBeach/AlonaBeach-04.jpg" alt="">
+                      <img src="/Landmarks/Beaches/AndaBeach/AndaBeach-02.jpg" alt="">
+                      <img src="/Landmarks/Beaches/BanolBeach/BanolBeach-03.jpg" alt="">
+                      <img src="/Landmarks/Beaches/ElNido/Elnido-04.jpg" alt="">
+                    </div>
+                    <p class="name">Beaches</p>
+                  </div>
+                </a>
+              </td>
+    
+            </tr>
+    
+            <tr class="rows">
+              <td class="cell">
+                <a href="Landmarks/HistoricalAndCulturalSites.htm"  class="cardLink">
+                  <div class="card1" id="HistoricalAndCultural">
+                    <div class="image-container">
+                      <img src="Landmarks\HistoricalAndCulturalSites\RizalPark\RizalPark-03.jpg" alt="">
+                      <img src="/Landmarks/HistoricalAndCulturalSites/Binondo/Binondo-02.jpg" alt="">
+                      <img src="/Landmarks/HistoricalAndCulturalSites/BanaueRiceTerraces/BanaueRiceTerraces-03.jpg" alt="">
+                      <img src="/Landmarks/HistoricalAndCulturalSites/CagsawaRuins/CagsawaRuins-02.jpg" alt="">
+                      <img src="/Landmarks/HistoricalAndCulturalSites/DaragaChurch/DaragaChurch-02.JPG" alt="">
+                    </div>
+                    <p class="name">Historical and Cultural Sites</p>
+                  </div>
+                </a>
+              </td>
+    
+              <td class="cell">
+                <a href="Landmarks/LakesAndMountains.htm"  class="cardLink">
+                    <div class="card1" id="LakesMountains">
+                        <div class="image-container">
+                            <img src="/Landmarks/LakesAndMountains/LakeHolon/LakeHolon-03.jpg" alt="">
+                            <img src="/Landmarks/LakesAndMountains/BudBongao/BudBongao-02.jpg" alt="">
+                            <img src="/Landmarks/LakesAndMountains/MountApo/MountApo-03.jpg" alt="">
+                            <img src="/Landmarks/LakesAndMountains/LakeSebu/LakeSebu-04.jpg" alt="">
+                            <img src="/Landmarks/LakesAndMountains/MountBalagbag/MountBalagbag-03.jpg" alt="">
+                            
+                        </div>
+                        <p class="name">Lakes And Mountains</p>
+                    </div>
+                </a>
+            </td>
+            </tr>
+    
+            <tr class="rows">
+              <td class="cell">
+                <a href="Landmarks/WaterFalls.htm" class="cardLink">
+                    <div class="card1">
+                        <div class="image-container">
+                          <img src="/Landmarks/WaterFalls/AsikAsikFalls/AsikAsikFalls-01.jpg" alt="">
+                          <img src="/Landmarks/WaterFalls/BolinaoFalls/BolinaoFalls-01.jpg" alt="">
+                          <img src="/Landmarks/WaterFalls/CambugahayFalls/CambugahayFalls-03.jpg" alt="">
+                          <img src="/Landmarks/WaterFalls/AguinidFalls/AguinidFalls-03.jpg" alt="">
+                          <img src="/Landmarks/WaterFalls/AliwagwagFalls/AliwagwagFalls-04.jpg" alt="">
+                        </div>
+                        <p class="name">Water Falls</p>
+                    </div>
+                </a>
+              </td>
+              <td class="cell">
+                <a href="Landmarks/zAllDestinations.htm"  class="cardLink">
+                    <div class="card1" id="View All">
+                        <div class="image-container">
+                          <img src="/Landmarks/zLandmarksResources/allDestinations-img.jpg" alt="">
+                          <img src="/Landmarks/LakesAndMountains/MayonVolcano/MayonVolcano-02.jpg" alt="">
+                          <img src="/Landmarks/Beaches/LongBeach/LongBeach-01.jpg" alt="">
+                          <img src="/Landmarks/Waterfalls/MariaCristinaFalls/MariaCristinaFalls-04.jpg" alt="">
+                          <img src="/Landmarks/HistoricalAndCulturalSites/CalleCrisologo/CalleCrisologo-03.jpg" alt="">
+                          <img src="/Landmarks/LakesAndMountains/TaalVolcano/TaalVolcano-02.jpg" alt="">
+
+                        </div>
+                        <p class="name">View All Destinations</p>
+                    </div>
+                </a>
+              </td>
+            </tr>
+
+            <!-- <tr class="rows">
+                <td class="lastCell">
+                    <div class="card1" id="beaches">
+                        <img src="Landmarks/LakesAndMountains/LakesAndMountainImage/LakeHolon/4.jpg" alt="">
+                        <p class="name">Check All Destinations</p>
+                    </div>
+                </td>
+            </tr> -->
+        </table>
+
+    </div>
+
+    <div class="footer">
+      <div class="footer-elements-container">
+        <div class="footer-brand-container">
+          <a href="Destinaryo.htm">
+            <div class="footer-logo-container">
+              <img src="logo.png" alt="Destinaryo" class="footer-logo">
+            </div>
+            </a>
+        </div>
+        <div class="footer-buttons">
+          
+          <table class="footer-buttons-table">
+            <tr>
+              <td>
+                <a href="aboutUs.htm"><button class="footer-button-link">About Us</button></a>
+              </td>
+              <td>
+                <a href="Destinations.htm"><button class="footer-button-link">Destinations</button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="Destinaryo.htm"><button class="footer-button-link">Home</button></a>
+              </td>
+              <td>
+                <a href="referencePage.htm"><button class="footer-button-link">References</button></a>
+              </td>
+            </tr>
+          </table>     
+        </div>
+      </div>
+      <div class="footer-brand">
+        <p class="footer-brand-subtitle">Disclaimer: Photos and links are sourced externally—full credit to the original owners. This content is for educational purposes only. </p>
+      </div>
+    </div>
+</body>
+</html>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".card1").forEach((card) => {
+        let images = card.querySelectorAll(".image-container img");
+        if (images.length <= 1) return; 
+        let currentIndex = 0;
+        let interval;
+
+        images.forEach(img => img.style.opacity = "0");
+        images[0].style.opacity = "1";
+
+        function startSlideshow() {
+            // Immediately change image on first hover
+            images[currentIndex].style.opacity = "0"; 
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.opacity = "1"; 
+
+            // Start interval for subsequent changes
+            interval = setInterval(() => {
+                images[currentIndex].style.opacity = "0"; 
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].style.opacity = "1"; 
+            }, 2000); // Reduced from 1000 to 300ms
+        }
+
+        function stopSlideshow() {
+            clearInterval(interval);
+
+            images.forEach(img => img.style.opacity = "0");
+            currentIndex = 0;
+            images[0].style.opacity = "1";
+        }
+ 
+        card.addEventListener("mouseenter", startSlideshow);
+        card.addEventListener("mouseleave", stopSlideshow);
+    });
+});
+
+
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Gawang Pogi-->

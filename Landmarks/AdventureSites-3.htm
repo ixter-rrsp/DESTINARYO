@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Sites 3</title>
+    <link rel="stylesheet" href="zLandmarksResources/Landmarks.css">
+    <link rel="stylesheet" href="../Navbar.css">
+    <script src="zLandmarksResources/search.js"></script> 
+    <link rel="icon" type="image/x-icon" href="../image/favicon_io/favicon.ico">
+
+    
+</head>
+
+<body style="background-color: #FAF3E0;">
+  
+  <nav class="navbar">
+    <div class="navbar-top-container">
+      <div class="navbar-icon-burger-container">
+        <a href=" ../Destinaryo.htm">
+          <div class="navbar-logo-container">
+            <img src="../logo.png" alt="Destinaryo" class="navbar-logo">
+          </div>
+        </a>
+        <div class="burger-button" onclick="toggleNavbar()">
+          ☰
+        </div>
+      </div>
+  
+      <div class="button-searchbar-container" id="navbar-menu">
+        <div class="navbar-button-container">
+          <a href="../Destinaryo.htm"><button class="navbar-button">Home</button></a>
+          <a href="../Destinations.htm"><button class="navbar-button">Destinations</button></a>
+          <a href="../aboutUs.htm"><button class="navbar-button">About Us</button></a>
+        </div>
+        
+        <div class="searchbar-container">
+          <input type="text" class="searchbar" id="searchBox" placeholder="Search..." onkeyup="searchFiles()">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+          <div id="searchResults" class="search-results"></div>
+        </div>
+
+      </div>
+    </div>
+   
+    <div class="breadcrumb-container">
+      <ul class="breadcrumb">
+        <li><a href="../Destinaryo.htm">Home</a></li>
+        <li><a href="../Destinations.htm">Destinations</a></li>
+        <li><a href="AdventureSites-3.htm">Adventure Sites 3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="mainContainer">
+    <div class="headerContainer">
+      <h1 class="header">Adventure Sites</h1>
+      <!-- change the page every new file -->
+      <p class="sub-header">PAGE 3</p> 
+    </div>
+    
+    <div class="card-container">
+      <!-- destination portal path: Category Folder / Destination Folder / html file -->
+      <a href="AdventureSites/InflatableIsland/InflatableIsland.htm" class="cardLink">
+        <div class="card1" id="AdventureSites">
+          <div class="image-container">
+            <!-- images of the destination path: Category Folder / Destination Folder / Image name all 5 -->
+            <img src="AdventureSites/InflatableIsland/InflatableIsland-01.jpg" alt="Inflateable Island">
+            <img src="AdventureSites/InflatableIsland/InflatableIsland-02.jpg" alt="Inflateable Island">
+            <img src="AdventureSites/InflatableIsland/InflatableIsland-03.jpg" alt="Inflateable Island">
+            <img src="AdventureSites/InflatableIsland/InflatableIsland-04.jpg" alt="Inflateable Island">
+            <img src="AdventureSites/InflatableIsland/InflatableIsland-05.jpg" alt="Inflateable Island">
+          </div>
+          
+          <div class="text-content">
+            <!-- destination title -->
+            <p class="name">Inflateable Island – Subic Bay, Zambales</p>
+            <!-- short detail of destination -->
+            <p class="details">Asia’s largest floating playground, featuring giant slides, swings, and obstacle courses on water. This vibrant attraction offers exciting activities, perfect for thrill-seekers and families looking for a fun beach adventure.
+            </p>
+          </div>    
+        </div>
+      </a>
+      
+      <a href="AdventureSites/JCastlesThemePark/JCastlesThemePark.htm" class="cardLink">
+        <div class="card1" id="AdventureSites2">
+          <div class="image-container">
+            <img src="AdventureSites/JCastlesThemePark/JCastlesThemePark-01.jpg" alt="J Castles ThemePark">
+            <img src="AdventureSites/JCastlesThemePark/JCastlesThemePark-02.jpg" alt="J Castles ThemePark">
+            <img src="AdventureSites/JCastlesThemePark/JCastlesThemePark-03.jpg" alt="J Castles ThemePark">
+            <img src="AdventureSites/JCastlesThemePark/JCastlesThemePark-04.jpg" alt="J Castles ThemePark">
+            <img src="AdventureSites/JCastlesThemePark/JCastlesThemePark-05.jpg" alt="J Castles ThemePark">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">J Castles ThemePark – Laguna</p>
+            <p class="details">A fairy tale-inspired attraction in Laguna, featuring castle-like structures, themed rides, and magical landscapes. It offers a whimsical experience for families and kids who dream of stepping into a storybook adventure.
+
+            </p>
+          </div>   
+        </div>
+      </a>
+
+      <a href="AdventureSites/Magikland/Magikland.htm" class="cardLink">
+        <div class="card1" id="AdventureSites3">
+          <div class="image-container">
+            <img src="AdventureSites/Magikland/Magikland-01.jpg" alt="Magik Land">
+            <img src="AdventureSites/Magikland/Magikland-02.jpg" alt="Magik Land">
+            <img src="AdventureSites/Magikland/Magikland-03.jpg" alt="Magik Land">
+            <img src="AdventureSites/Magikland/Magikland-04.jpg" alt="Magik Land">
+            <img src="AdventureSites/Magikland/Magikland-05.jpg" alt="Magik Land">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Magik Land – Negros Occidental</p>
+            <p class="details">The first outdoor theme park in Negros Occidental, featuring thrilling rides, carnival attractions, and fantasy-themed entertainment. It is designed for fun and adventure, making it a great destination for families and theme park enthusiasts.
+
+            </p>
+          </div>
+            </div>
+      </a>
+
+      <a href="AdventureSites/ManilaOceanPark/ManilaOceanPark.htm" class="cardLink">
+        <div class="card1" id="AdventureSites4">
+          <div class="image-container">
+            <img src="AdventureSites/ManilaOceanPark/ManilaOceanPark-01.jpg" alt="Manila Ocean Park">
+            <img src="AdventureSites/ManilaOceanPark/ManilaOceanPark-02.jpg" alt="Manila Ocean Park">
+            <img src="AdventureSites/ManilaOceanPark/ManilaOceanPark-03.jpg" alt="Manila Ocean Park">
+            <img src="AdventureSites/ManilaOceanPark/ManilaOceanPark-04.jpg" alt="Manila Ocean Park">
+            <img src="AdventureSites/ManilaOceanPark/ManilaOceanPark-05.jpg" alt="Manila Ocean Park">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Manila Ocean Park – Manila</p>
+            <p class="details">A world-class marine theme park in Manila, offering interactive exhibits, ocean tunnels, and fascinating marine shows. Visitors can explore diverse aquatic species, experience fish spa treatments, and even swim with stingrays and sharks.
+
+              </p>
+          </div>
+        </div>
+      </a> 
+      
+      <a href="AdventureSites/OceanAdventure/OceanAdventure.htm" class="cardLink">
+        <div class="card1" id="AdventureSites5">
+          <div class="image-container">
+            <img src="AdventureSites/OceanAdventure/OceanAdventure-01.jpg" alt="Ocean Adventure">
+            <img src="AdventureSites/OceanAdventure/OceanAdventure-02.jpg" alt="Ocean Adventure">
+            <img src="AdventureSites/OceanAdventure/OceanAdventure-03.jpg" alt="Ocean Adventure">
+            <img src="AdventureSites/OceanAdventure/OceanAdventure-04.jpg" alt="Ocean Adventure">
+            <img src="AdventureSites/OceanAdventure/OceanAdventure-05.jpg" alt="Ocean Adventure">
+          </div>
+          
+          <div class="text-content">
+            <p class="name">Ocean Adventure – Subic</p>
+            <p class="details">
+                A marine park in Subic, featuring live dolphin and sea lion shows, interactive exhibits, and snorkeling experiences. It provides an educational and entertaining experience while promoting marine conservation and wildlife protection.
+
+
+            </p>  
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <ul class="pagination">
+      <a href="AdventureSites-2.htm"><li class="arrow">&laquo;</li></a>
+      <a href="AdventureSites.htm"><li>1</li></a>
+      <a href="AdventureSites-2.htm"><li >2</li></a>
+      <a href="AdventureSites-3.htm"><li class="active">3</li></a>
+      <a href="AdventureSites-4.htm"><li >4</li></a>
+      <a href="AdventureSites-4.htm"><li class="arrow">&raquo;</li></a>
+    </ul>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-elements-container">
+      <div class="footer-brand-container">
+        <a href=" ../Destinaryo.htm">
+          <div class="footer-logo-container">
+            <img src=" ../logo.png" alt="Destinaryo" class="footer-logo">
+          </div>
+        </a>
+      </div>
+      
+      <div class="footer-buttons">
+        <table class="footer-buttons-table">
+          <tr>
+            <td>
+              <a href=" ../aboutUs.htm"><button class="footer-button-link">About Us</button></a>
+            </td>
+            <td>
+              <a href=" ../Destinations.htm"><button class="footer-button-link">Destinations</button></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href=" ../Destinaryo.htm"><button class="footer-button-link">Home</button></a>
+            </td>
+            <td>
+              <a href=" ../referencePage.htm"><button class="footer-button-link">References</button></a>
+            </td>
+          </tr>
+        </table>     
+      </div>
+    </div>
+    
+    <div class="footer-brand">
+      <p class="footer-brand-subtitle">Disclaimer: Photos and links are sourced externally—full credit to the original owners. This content is for educational purposes only.</p>
+    </div>
+  </div>
+
+<script src="zLandmarksResources/Landmarks.js"></script>
+</body>
+</html>

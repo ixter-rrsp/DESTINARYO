@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'customFont';
+    src: url('../DMSerifText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: custom-header;
+    src: url(../../fonts/Shine-in-Valentine.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: custom-title-page;
+    src: url(../../fonts/THEBOLDFONT-FREEVERSION.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: custom-title;
+    src: url(../../fonts/Louis-George-Cafe-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: custom-description;
+    src: url(../../fonts/Louis-George-Cafe.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+.mainContainer {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+}
+
+.header {
+    margin-top: 2%;
+    font-family: custom-title-page;
+    color: #1B4F72;
+    font-size: clamp(25px, 10vw, 75px);
+    text-shadow: 3px 3px 6px rgba(178, 190, 181, 0.7); 
+    letter-spacing: 0.5vw;
+}
+.sub-header {
+    font-family: custom-title-page;
+    color: #1B4F72;
+    font-size: clamp(8px, 2vw, 20px);
+    text-shadow: 3px 3px 6px rgba(178, 190, 181, 0.7); 
+    letter-spacing: 0.5vw;
+}
+
+.cardLink{
+    text-decoration:none;
+}
+
+
+.card-container {
+    width: 70%;
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    
+}
+
+
+.card-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+
+.card1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #FFEB99;
+    border-radius: 1vh;
+    box-shadow: 10px 10px 0px #B2BEB5;
+    padding: 15px;
+    width: 100%;
+    transition: transform 0.3s ease;
+    gap: 15px; 
+}
+
+
+
+.image-container { 
+    width: 65%;  
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-container img:first-child {
+    opacity: 1;
+}
+
+
+
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card1 .name {
+    font-size: 2VW;
+    font-weight: bold;
+    color: #8B4513;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 0px rgba(178, 190, 181, 0.9);
+    font-family: custom-title;
+}
+
+.card1 .details {
+    font-size: 1.5VW;
+    color: #333;
+    line-height: 1.4;
+    text-shadow: 2px 2px 5px rgba(178, 190, 181, 0.5); 
+    font-family: custom-description;
+}
+
+
+
+.card1:hover {
+    transform: scale(1.05);
+}
+
+
+.card-container:hover .card1:not(:hover) {
+    filter: blur(1px);
+    transform: scale(0.9);
+}
+
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 5%;
+    gap: 8px;
+}
+
+
+.pagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(2rem, 8vw, 2.5rem);  
+    height: clamp(2rem, 8vw, 2.5rem);
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: clamp(1rem, 3vw, 1.2rem); 
+    color: #1B4F72;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.pagination li a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+.pagination a {
+    text-decoration: none;
+}
+
+
+.pagination li:hover,
+.pagination .active {
+    background: #1B4F72;
+    color: white;
+    border: none;
+}
+
+
+.pagination .arrow {
+    background: none;
+    border: none;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    color: #1B4F72;
+    cursor: pointer;
+}
+
+.pagination .arrow:hover {
+    color: #0f2b3d;
+}
+
+ 
+@media (max-width: 480px) {
+    .pagination {
+        gap: 4px;  
+    }
+    
+    .pagination li {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .pagination .arrow {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .card-container {
+        width: 80%;
+    }
+
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80%; 
+        max-width: 500px; 
+        padding: 5%;
+        margin: 4vh auto; 
+    }
+    
+    .image-container { 
+    width: 75%;  
+    height: 25vw;
+    }
+    
+
+    .text-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .card1 .name {
+        font-size: clamp(1vw, 4rem, 5vw);
+    }
+
+    .card1 .details {
+        font-size: clamp(0.5vw, 1.5rem, 3vw);
+        margin-bottom: 4vh auto;
+    }
+}
