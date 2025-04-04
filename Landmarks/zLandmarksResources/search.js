@@ -93,7 +93,7 @@ const files = [
     { name: "Maria Cristina Falls", image: "Landmarks/WaterFalls/MariaCristinaFalls/MariaCristinaFalls-03.jpg", path: "Landmarks/WaterFalls/MariaCristinaFalls/MariaCristinaFalls.htm"},
     { name: "Pagsanjan Falls", image: "Landmarks/WaterFalls/PagsanjanFalls/PagsanjanFalls-03.jpg", path: "Landmarks/WaterFalls/PagsanjanFalls/PagsanjanFalls.htm"},
     { name: "Pulangbato Falls", image: "Landmarks/WaterFalls/PulangbatoFalls/PulangbatoFalls-03.jpg", path: "Landmarks/WaterFalls/PulangbatoFalls/PulangbatoFalls.htm"},
-    { name: "Tangadan Falls", image: "Landmarks/WaterFalls/TangadanFalls/TangadanFalls-03.jpg", path: "Landmarks/WaterFalls/TangadanFalls/TangadanFalls.htm"},
+    { name: "Tangadan Falls", image: "Landmarks/WaterFalls/TangadanFalls/TangadanFalls-02.jpg", path: "Landmarks/WaterFalls/TangadanFalls/TangadanFalls.htm"},
     { name: "Tappiyah Falls", image: "Landmarks/WaterFalls/TappiyahFalls/TappiyahFalls-03.jpg", path: "Landmarks/WaterFalls/TappiyahFalls/TappiyahFalls.htm"},
     { name: "Tinago Falls", image: "Landmarks/WaterFalls/TinagoFalls/TinagoFalls-03.jpg", path: "Landmarks/WaterFalls/TinagoFalls/TinagoFalls.htm"},
     { name: "Tinuy-an Falls", image: "Landmarks/WaterFalls/Tinuy-anFalls/Tinuy-anFalls-03.jpg", path: "Landmarks/WaterFalls/Tinuy-anFalls/Tinuy-anFalls.htm"},
